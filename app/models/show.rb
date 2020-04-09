@@ -6,7 +6,7 @@ class Show < ActiveRecord::Base
   def actors_list 
     arr=[]
     self.actors.each do |each|
-      arr< "#{each.first_name} #{each.last_name}"
+      arr<< "#{each.first_name} #{each.last_name}"
     end
     arr
   end 
